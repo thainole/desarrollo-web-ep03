@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index01.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic+Coding&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+    <title>EP03</title>
+  </head>
+  <body>
+    <header class="cabecera">
+      <div class="logo">
+        <img src="./images/logo.png" alt="Logo" />
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#datos">Datos</a></li>
+          <li><a href="#mapas">Mapas</a></li>
+          <li><a href="#galeria">Galería</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contenedor-video">
+        <video src="./images/video01.mp4" autoplay loop></video>
+        <div class="texto-video">
+          <h1>Nuestro Sitio Web</h1>
+          <div>
+            <button>Ingresar A Mi Página</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="datos">
+        <h2>ENVÍA TUS DATOS</h2>
+        <p>
+          Llena el siguiente formulario con tu nombre, correo electrónico y un
+          mensaje, y nosotros te contactaremos!
+        </p>
+
+        <div class="grilla-datos">
+          <div class="imagen-formulario">
+            <img src="./images/image00.jpg" alt="Imagen" />
+          </div>
+          <form name="contacto">
+            <div class="grilla-formulario">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required />
+            </div>
+            <div class="grilla-formulario">
+              <label for="email">Correo Electrónico:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="grilla-formulario">
+              <label for="mensaje">Mensaje:</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <div class="form-boton">
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="mapas">
+        <h2>NUESTRA UBICACIÓN</h2>
+        <p>
+          Nos encontramos en una ubicación estratégica para que puedas venir a
+          conocernos!
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.805995064388!2d-77.02483629999999!3d-12.1254227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c81c605ea5e1%3A0x17328a8b49d37914!2sISIL%20-%20Miraflores!5e0!3m2!1ses-419!2spe!4v1731283160648!5m2!1ses-419!2spe"
+          width="600"
+          height="450"
+          style="border: 0; width: 100%"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
+      <section id="galeria">
+        <h2>NUESTRA GALERÍA DE IMÁGENES</h2>
+        <p>
+          Te presentamos una serie de fotos que describen visualmente lo que
+          hacemos día a día :)
+        </p>
+
+        <div class="galeria-imagenes">
+          <div class="imagen">
+            <img src="./images/image01.jpg" alt="Imagen 1" />
+            <span>Biblioteca</span>
+          </div>
+          <div class="imagen">
+            <img src="./images/image02.jpg" alt="Imagen 2" />
+            <span>Materiales</span>
+          </div>
+          <div class="imagen">
+            <img src="./images/image03.jpg" alt="Imagen 3" />
+            <span>Salón de clases</span>
+          </div>
+          <div class="imagen">
+            <img src="./images/image04.jpg" alt="Imagen 4" />
+            <span>Libros</span>
+          </div>
+          <div class="imagen">
+            <img src="./images/image05.jpg" alt="Imagen 5" />
+            <span>Compañerismo</span>
+          </div>
+          <div class="imagen">
+            <img src="./images/image06.jpg" alt="Imagen 6" />
+            <span>Aprendizaje</span>
+          </div>
+          <div class="imagen">
+            <img src="./images/image07.jpg" alt="Imagen 7" />
+            <span>Amistades</span>
+          </div>
+          <div class="imagen">
+            <img src="./images/image08.jpg" alt="Imagen 8" />
+            <span>Investigación</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-elemento">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <span><i class="fa-solid fa-user"></i> Thais M. Illescas Nole</span>
+      </div>
+      <div class="footer-phone">
+        <span
+          ><i class="fa-solid fa-mobile-screen-button"></i> +51 987 654
+          321</span
+        >
+        <span> <i class="fa-solid fa-phone"></i> (01) 456-7890 </span>
+      </div>
+      <div>
+        <i class="fa-solid fa-building-columns"></i>
+        <span>ISIL (Miraflores, Lima)</span>
+      </div>
+      <div>
+        <span
+          ><i class="fa-solid fa-graduation-cap"></i> Desarrollo de Software,
+          2024</span
+        >
+      </div>
+      <div class="footer-elemento">
+        <span
+          ><i class="fa-solid fa-chalkboard-user"></i> Prof. Roberto Inga</span
+        >
+      </div>
+    </footer>
+  </body>
+</html>

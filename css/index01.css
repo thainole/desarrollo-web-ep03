@@ -1,0 +1,280 @@
+:root {
+  --light-blue: #04acec;
+  --smoke-white: #e5f7ff;
+  --navy-blue: #025f82;
+  --dark-grey: #2f2f2f;
+  --dark-grey-opacity: #2f2f2f81;
+  --grey-blue: #b2def0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: auto;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: 'Nanum Gothic Coding', serif;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  text-align: center;
+  color: var(--smoke-white);
+  text-shadow: var(--grey-blue) 3px 2px 10px;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  margin-top: 5rem;
+  margin-bottom: 0;
+}
+h1:hover {
+  letter-spacing: 5px;
+  font-size: 3.65rem;
+}
+
+h2 {
+  font-family: 'Ubuntu', serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-family: 'Nunito', serif;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+span {
+  font-family: 'Nunito', serif;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--smoke-white);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 4.5 / 3;
+}
+
+video {
+  max-width: 100%;
+}
+
+form {
+  display: grid;
+}
+
+label,
+input {
+  font-family: 'Montserrat', serif;
+  font-size: 14px;
+  color: var(--dark-grey);
+}
+
+label {
+  font-weight: 500;
+}
+
+input {
+  height: 22px;
+}
+
+button {
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 2px dashed var(--grey-blue);
+  background-color: var(--navy-blue);
+  font-family: 'Ubuntu', serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: var(--grey-blue);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
+}
+button:hover {
+  border-color: var(--navy-blue);
+  background-color: var(--grey-blue);
+  color: var(--navy-blue);
+}
+
+#datos,
+#galeria {
+  padding: 20px;
+}
+
+#mapas {
+  padding-top: 20px;
+}
+
+.cabecera {
+  display: grid;
+  grid-template-columns: auto 400px;
+  grid-template-rows: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: var(--light-blue);
+  overflow: hidden;
+}
+
+.logo img {
+  max-width: 120px;
+}
+
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  column-gap: 15px;
+}
+
+.menu a {
+  font-family: 'Raleway', serif;
+  font-weight: 600;
+  text-underline-offset: 4px;
+}
+
+.menu a:hover {
+  text-decoration: underline dashed;
+}
+
+.contenedor-video {
+  overflow: hidden;
+  position: relative;
+}
+
+.texto-video {
+  width: 100%;
+  height: 99%;
+  background-color: var(--dark-grey-opacity);
+  position: absolute;
+  top: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+}
+
+.grilla-datos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+}
+
+.grilla-formulario {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  column-gap: 10px;
+  padding-top: 10px;
+  margin-bottom: 25px;
+}
+
+.imagen-formulario {
+  width: 100%;
+  overflow: hidden;
+}
+
+.imagen-formulario img {
+  aspect-ratio: 5 / 3;
+  border-radius: 15px;
+}
+
+.imagen-formulario:hover {
+  opacity: 0.8;
+}
+
+.form-boton {
+  justify-self: center;
+}
+
+.form-boton button {
+  padding: 8px 20px;
+  font-size: 1rem;
+}
+
+.galeria-imagenes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 15px;
+}
+
+.imagen {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid var(--dark-grey-opacity);
+  padding-bottom: 4px;
+}
+
+.imagen img {
+  opacity: 0.6;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.imagen:hover img {
+  opacity: 1;
+  filter: brightness(1.1);
+  transform: scaleX(1.05);
+}
+
+.imagen:hover span {
+  font-weight: 700;
+}
+
+.imagen:hover {
+  cursor: crosshair;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr 1.5fr;
+  place-items: center;
+  background-color: var(--light-blue);
+  color: var(--smoke-white);
+  padding-bottom: 5px;
+  margin-top: 35px;
+}
+.footer ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  column-gap: 20px;
+  padding-top: 10px;
+}
+
+footer span {
+  font-size: 15px;
+}
+
+footer a {
+  font-size: 22px;
+}
+
+.footer-phone {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.footer-phone span {
+  text-align: left;
+}
